@@ -4,8 +4,8 @@
             
             <form [formGroup]="form">
                 <div class="row">
-                    <div class="col-lg-2"> 
-                        Nombre
+                    <div class="col-lg-2" *ngFor="let item of student"> 
+                        {{item.name}} {{item.lastname}}
                     </div>
                     <div class="col-lg-2"> 
                         <input type="text" class="form-control" placeholder="Nota 1" aria-label="Nota 1" formControlName="nota1">

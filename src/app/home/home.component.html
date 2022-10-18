@@ -34,7 +34,8 @@
             <th scope="col">Nota 2</th>
             <th scope="col">Nota 3</th>
             <th scope="col">Nota 4</th>
-            <th scope="col">Promedio 1</th>
+            <th scope="col">Promedio</th>
+            <th scope="col">Acción</th>
           </tr>
         </thead>
         <tbody>
@@ -49,6 +50,7 @@
             <td>{{item.id}}</td>
             <td>{{item.id}}</td>
             <td>{{item.id}}</td>
+            <td><button (click)="nota(item.id)"><i class="fa-solid fa-plus"></i></button></td>
         </tbody>
       </table>
     </div>

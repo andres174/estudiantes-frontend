@@ -21,4 +21,9 @@ export class EstudianteServiceService {
     return this.http.get<any>(dir);
     
   }
+
+  findStudent(id:number){
+    let dir= this.url+"api/students/" + id;
+    return this.http.get<any>(dir)
+  }
 }

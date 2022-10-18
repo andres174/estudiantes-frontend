@@ -13,7 +13,7 @@ const routes: Routes = [
     path: 'students', component: StudentsComponent
   },
   {
-    path: 'grades', component: GradesComponent
+    path: 'grades/:id', component: GradesComponent
   },
 ];
 
