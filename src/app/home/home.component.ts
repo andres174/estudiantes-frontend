@@ -1,4 +1,6 @@
+import { EstudianteServiceService } from './../services/estudiante-service.service';
 import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  students:any = [];
+
+  constructor(private studentApi:EstudianteServiceService) { }
 
   ngOnInit(): void {
+    this.getStudents();
   }
 
+  getStudents(){
+    this.studentApi.getStudent().subscribe(res=>this.students=res);
+  }
+
+  
 }

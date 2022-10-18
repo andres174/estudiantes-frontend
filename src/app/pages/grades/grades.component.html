@@ -1,22 +1,32 @@
 <div class="container">
-    <div class="parent mt-5">
-        <div class="div1"> 
-            Nombre
-        </div>
-        <div class="div2"> 
-            dfghjk
-        </div>
-        <div class="div3"> 
-            dfghjk
-        </div>
-        <div class="div4"> 
-            dfghjk
-        </div>
-        <div class="div5"> 
-            dfghjk
-        </div>
-        <div class="div6"> 
-            dfghjk
+    <div class=" mt-5">
+        <div class="row">
+            
+            <form [formGroup]="form">
+                <div class="row">
+                    <div class="col-lg-2"> 
+                        Nombre
+                    </div>
+                    <div class="col-lg-2"> 
+                        <input type="text" class="form-control" placeholder="Nota 1" aria-label="Nota 1" formControlName="nota1">
+                    </div>
+                    <div class="col-lg-2"> 
+                        <input type="text" class="form-control" placeholder="Nota 2" aria-label="Nota 2" formControlName="nota2">
+                    </div>
+                    <div class="col-lg-2"> 
+                        <input type="text" class="form-control" placeholder="Nota 3" aria-label="Nota 3" formControlName="nota3">
+                    </div>
+                    <div class="col-lg-2"> 
+                        <input type="text" class="form-control" placeholder="Nota 4" aria-label="Nota 4" formControlName="nota4">
+                    </div>
+                    <div class="col-lg-2"> 
+                        Promedio
+                    </div>
+                </div>
+                
+                
+            </form>
+            
         </div>
     </div>
 </div>

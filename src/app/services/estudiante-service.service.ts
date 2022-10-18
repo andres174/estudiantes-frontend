@@ -15,4 +15,10 @@ export class EstudianteServiceService {
     let dir= this.url+"api/students";
     return this.http.post<any>(dir,form);
   }
+
+  getStudent(){
+    let dir= this.url+"api/students";
+    return this.http.get<any>(dir);
+    
+  }
 }
