@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, MinLengthValidator, Validators } from '@angular/forms';
 import { from } from 'rxjs';
+import { EstudianteServiceService } from 'src/app/services/estudiante-service.service';
 
 @Component({
   selector: 'app-students',
@@ -16,13 +17,13 @@ export class StudentsComponent implements OnInit {
     email: new FormControl('',Validators.required)
   })
 
-  constructor() { }
+  constructor(private studentApi:EstudianteServiceService) { }
 
   ngOnInit(): void {
   }
 
   registro(form:any){
-    console.log(form)
+    this.studentApi.registerStudent(form).subscribe(data=>(console.log(data)));
   }
 
 }

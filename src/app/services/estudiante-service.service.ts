@@ -10,5 +10,9 @@ export class EstudianteServiceService {
 
   constructor(private http:HttpClient) { }
 
-  
+  registerStudent(form:any)
+  {
+    let dir= this.url+"api/students";
+    return this.http.post<any>(dir,form);
+  }
 }
