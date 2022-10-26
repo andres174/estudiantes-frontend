@@ -7,7 +7,7 @@ import { Observable, observable } from 'rxjs';
 })
 export class EstudianteServiceService {
   /* url:string = "https://estudiantes-sexto.herokuapp.com/" */
-  url:string = "http://localhost:8080/student"
+  url:string = "https://api-java-sexto.herokuapp.com/student"
 
   constructor(private http:HttpClient) { }
 
