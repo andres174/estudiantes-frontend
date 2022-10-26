@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit {
   constructor(private studentApi:EstudianteServiceService, private router:Router) { }
 
   ngOnInit(): void {
+    /* this.getJ(); */
     this.getStudents();
   }
 
@@ -23,9 +24,21 @@ export class HomeComponent implements OnInit {
     this.studentApi.getStudent().subscribe(res=>this.students=res);
   }
   
-  nota(id:number){
+  /* nota(id:number){
     this.router.navigate(['grades/'+ id ]);
-  }
+  } */
+
+  /* getJ(){
+    this.studentApi.getJava().subscribe({
+      next:(s)=>{
+        console.log(s);
+        
+      },
+      error: (e)=>{
+        console.log(e);
+      }
+    })
+  } */
 
   
 }

@@ -26,14 +26,14 @@ export class GradesComponent implements OnInit {
   constructor(private router:ActivatedRoute, private studentApi:EstudianteServiceService) { }
 
   ngOnInit(): void {
-    this.sub = this.router.params.subscribe(params => {
+    /* this.sub = this.router.params.subscribe(params => {
       this.id = + params['id'];
    });
-   this.findStudent();
+   this.findStudent(); */
   }
 
   findStudent(){
-    this.studentApi.findStudent(this.id).subscribe(res=>console.log(res)/* this.student=res */);
+    this.studentApi.findStudent(this.id).subscribe(res=>this.student=res);
   }
 
 }
