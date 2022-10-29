@@ -7,12 +7,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StudentsComponent } from './pages/students/students.component';
 import { HomeComponent } from './home/home.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StudentsComponent,
-    HomeComponent
+    HomeComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

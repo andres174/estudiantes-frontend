@@ -1,0 +1,62 @@
+<div class="containerbg">
+
+
+<div class="container text-center">
+    <!-- <div class="row justify-content-center">
+      <div class="col">
+        <div class="card" style="width: 13rem; margin: auto; margin-top: 6rem;">
+          <i class="fa-solid fa-user fa-2xl" style="margin-top: 2rem;" ></i>
+          <div class="card-body">
+            <h5 class="card-title">Estudiantes</h5>
+            <p class="card-text"> <button class="btn btn-primary" routerLink="students">Agregar</button></p>
+           
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+
+
+    
+<div style="padding-top: 100px;"></div>
+
+<div class="alert alert-info m-t-1 text-xs-center" role="alert">
+  <i class="fa fa-info-circle fa-fw fa-lg"></i> Informacion Importante de todos los estudiantes registrados
+</div>
+
+
+    <div class="row justify-content-center mt-5">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Cedula</th>
+            <th scope="col">Email</th>
+            <th scope="col">Nota 1</th>
+            <th scope="col">Nota 2</th>
+            <th scope="col">Nota 3</th>
+            <th scope="col">Nota 4</th>
+            <th scope="col">Promedio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of students">
+            <th scope="row">{{item.id}}</th>
+            <td>{{item.name}}</td>
+            <td>{{item.lastname}}</td>
+            <td>{{item.dni}}</td>
+            <td>{{item.email}}</td>
+            <td>{{item.n1}}</td>
+            <td>{{item.n2}}</td>
+            <td>{{item.n3}}</td>
+            <td>{{item.n4}}</td>
+            <td>{{item.prom}}</td>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>

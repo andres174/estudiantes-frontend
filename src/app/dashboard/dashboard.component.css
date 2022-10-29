@@ -22,3 +22,23 @@
 	}
 }
 
+h5{
+    color: black;
+}
+
+i{
+    color: black;
+}
+
+
+.alert-info {
+	background-color: #45abcd4a;
+	border-color: #2f90b07c;
+	color: #fff; 
+  }
+  .alert-info hr {
+	border-top-color: #2a7f9c; 
+  }
+  .alert-info .alert-link {
+	color: #e6e6e6; 
+  }

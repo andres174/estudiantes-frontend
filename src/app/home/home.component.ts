@@ -10,35 +10,10 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-  students:any = [];
-  
-
-  constructor(private studentApi:EstudianteServiceService, private router:Router) { }
+  constructor() { }
 
   ngOnInit(): void {
-    /* this.getJ(); */
-    this.getStudents();
   }
-
-  getStudents(){
-    this.studentApi.getStudent().subscribe(res=>this.students=res);
-  }
-  
-  /* nota(id:number){
-    this.router.navigate(['grades/'+ id ]);
-  } */
-
-  /* getJ(){
-    this.studentApi.getJava().subscribe({
-      next:(s)=>{
-        console.log(s);
-        
-      },
-      error: (e)=>{
-        console.log(e);
-      }
-    })
-  } */
 
   
 }

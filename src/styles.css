@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+.navbar .navbar-nav .nav-link {
+    color: #ffffff;
+  }
+  .sm-icons {
+    flex-direction: row;
+  }
+  .sm-icons .nav-link {
+    padding-right: 1em;
+  }

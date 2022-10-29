@@ -1,55 +1,205 @@
-<div class="container text-center">
-    <div class="row justify-content-center">
-      <div class="col">
-        <div class="card" style="width: 13rem; margin: auto; margin-top: 3rem;">
-          <i class="fa-solid fa-user fa-2xl" style="margin-top: 2rem;"></i>
+
+<div id='home'>
+	<div class="container">
+		<div class="mainTitle text-center"><h1>Grupo #2</h1></div>
+		<h4 class=' text-center'>Mini SGA GO</h4>
+	</div>
+	
+</div>
+<div id='about'>
+	<div class='container'>
+		<div class='well'>
+      <div class="card-group">
+        <div class="card text-white bg-dark">
+          <img class="card-img-top" src="https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Estudiantes</h5>
+            <h5 class="card-title">PLAN</h5>
             <p class="card-text"></p>
-            <a routerLink="students" class="btn btn-primary">Agregar</a>
+          </div>
+          <div class="card-footer">
+            <small>GitHub</small>
+          </div>
+        </div>
+        <div class="card text-white bg-dark ">
+          <img class="card-img-top rounded mx-auto d-block" src="https://resources.jetbrains.com/storage/products/intellij-idea/img/meta/intellij-idea_logo_300x300.png" style="max-width: 13rem;"alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">CODE</h5>
+            <p class="card-text"></p>
+          </div>
+          <div class="card-footer">
+            <small>JetBraind Java Strip</small>
+          </div>
+        </div>
+        <div class="card text-white bg-dark">
+          <img class="card-img-top rounded mx-auto d-block" src="https://dwglogo.com/wp-content/uploads/2017/12/Gradle_logo_01.png" style="max-width: 18rem;" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">BUILD</h5>
+            <p class="card-text"></p>
+          </div>
+          <div class="card-footer">
+            <small>Gradle</small>
           </div>
         </div>
       </div>
-      <!-- <div class="col">
-        <div class="card" style="width: 18rem; margin: auto; margin-top: 5rem;">
-          <i class="fa-solid fa-square-pen fa-2xl" style="margin: 2rem;"></i>
+
+      <br>
+      <div class="card-group">
+        <div class="card text-white bg-dark">
+          <img class="card-img-top rounded mx-auto d-block" src="https://storage.googleapis.com/replit/images/1629118496825_12ab2b70fb48c6195431fd21c8f4c5bd.png" style="max-width: 14rem;" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Notas</h5>
+            <h5 class="card-title">TEST</h5>
             <p class="card-text"></p>
-            <a routerLink="grades" class="btn btn-primary">Agregar</a>
+          </div>
+          <div class="card-footer">
+            <small>Junit</small>
           </div>
         </div>
-      </div> -->
-    </div>
-    <div class="row justify-content-center mt-5">
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Nombre</th>
-            <th scope="col">Apellido</th>
-            <th scope="col">Cedula</th>
-            <th scope="col">Email</th>
-            <th scope="col">Nota 1</th>
-            <th scope="col">Nota 2</th>
-            <th scope="col">Nota 3</th>
-            <th scope="col">Nota 4</th>
-            <th scope="col">Promedio</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let item of students">
-            <th scope="row">{{item.id}}</th>
-            <td>{{item.name}}</td>
-            <td>{{item.lastname}}</td>
-            <td>{{item.dni}}</td>
-            <td>{{item.email}}</td>
-            <td>{{item.n1}}</td>
-            <td>{{item.n2}}</td>
-            <td>{{item.n3}}</td>
-            <td>{{item.n4}}</td>
-            <td>{{item.prom}}</td>
-        </tbody>
-      </table>
+        <div class="card text-white bg-dark ">
+          <img class="card-img-top rounded mx-auto d-block" src="https://1000marcas.net/wp-content/uploads/2022/04/Gitlab-Logo.png" style="max-width: 23rem;"alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">RELEASE</h5>
+            <p class="card-text"></p>
+          </div>
+          <div class="card-footer">
+            <small>GitLab</small>
+          </div>
+        </div>
+        <div class="card text-white bg-dark">
+          <img class="card-img-top rounded mx-auto d-block" src="https://firebase.google.com/static/downloads/brand-guidelines/PNG/logo-logomark.png" style="max-width: 9rem;" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">DEPLOY</h5>
+            <p class="card-text"></p>
+          </div>
+          <div class="card-footer">
+            <small>FireBase</small>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="card-group">
+        <div class="card text-white bg-dark">
+          <img class="card-img-top rounded mx-auto d-block" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Puppet_transparent_logo.svg/2560px-Puppet_transparent_logo.svg.png" style="max-width: 25rem;" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">OPERATE</h5>
+            <p class="card-text"></p>
+          </div>
+          <div class="card-footer">
+            <small>Puppet</small>
+          </div>
+        </div>
+        <div class="card text-white bg-dark ">
+          <img class="card-img-top rounded mx-auto d-block" src="https://www.splunk.com/content/dam/splunk2/images/Planet-Splunk.png" style="max-width: 9rem;"alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">MONITOR</h5>
+            <p class="card-text"></p>
+          </div>
+          <div class="card-footer">
+            <small>Splunk</small>
+          </div>
+        </div>
+      </div>
+
+
+      
+      
+		</div>
+	</div>
+</div>
+
+
+<div class="container2">
+  <div class="row">
+    <div class="col-md-12 pt-5 pb-2 ourTeam-hedding text-center">
+      <h1>Desarrolladores</h1>
+      <p>Equipo de SGA GO usando la filosofia, <strong>DevOps</strong>
+      </p>
     </div>
   </div>
+  <div class="row">
+    <div class="col-md-4 col-sm-4 col-xs-12">
+      <div class="row section-success ourTeam-box text-center">
+        <div class="col-md-12 section1">
+          <img src="https://lh3.googleusercontent.com/ogw/AOh-ky3Qr0fYg7OR4O53RluCPnUEBguEDthz1HziKg0Opw=s256">
+        </div>
+        <div class="col-md-12 section2 pb-3">
+          <p>Alex Arqui</p>
+          <span>Front-end, Release, Operate, Monitor</span>
+        </div>
+        <div class="col-md-12 section3">
+          <a href="https://github.com/Arqui9897"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 col-xs-12">
+      <div class="row section-info ourTeam-box text-center">
+        <div class="col-md-12 section1">
+          <img src="https://lh3.googleusercontent.com/a-/ACNPEu_sOgp0P8e-HasIY-03dZHrYcJCbTNFlc3tfnYR=s256">
+        </div>
+        <div class="col-md-12 section2 pb-3">
+          <p>Andres Zambrano</p>
+          <span> Back-end, Plan, Code, Build</span>
+        </div>
+        <div class="col-md-12 section3">
+          <a href="https://github.com/andres174"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4 col-xs-12">
+      <div class="row section-danger ourTeam-box text-center">
+        <div class="col-md-12 section1">
+          <img src="https://lh3.googleusercontent.com/a-/ACNPEu_7GRkASXrG1O7QSbinOMOZTP0bP-kJmyggDLZGIg=s256">
+        </div>
+        <div class="col-md-12 section2 pb-3">
+          <p>Luis Bermeo</p>
+          <span>Test Deploy</span>
+        </div>
+        <div class="col-md-12 section3">
+          <a href="https://github.com/bermeo2000"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="slider-area">
+  <h2>Tecnologias Usadas</h2>
+  <div class="wrapper">
+    <div class="item"><img alt="" width="100" height="100" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"></div>
+    <div class="item"><img alt="" width="100" height="100" src="https://resources.jetbrains.com/storage/products/intellij-idea/img/meta/intellij-idea_logo_300x300.png"></div>
+    <div class="item"><img alt="" width="100" height="100" src="https://sdtimes.com/wp-content/uploads/2016/05/0517.sdt-gradle.png"></div>
+    <div class="item"><img alt="" width="100" height="100" src="https://storage.googleapis.com/replit/images/1629118496825_12ab2b70fb48c6195431fd21c8f4c5bd.png"></div>
+    <div class="item"><img alt="" width="100" height="100" src="https://seeklogo.com/images/G/gitlab-logo-FAA48EFD02-seeklogo.com.png"></div>
+    <div class="item"><img alt="" width="70" height="100" src="https://firebase.google.com/static/downloads/brand-guidelines/PNG/logo-logomark.png?hl=es-419"></div>
+    <div class="item"><img alt="" width="180" height="80" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Puppet_transparent_logo.svg/2560px-Puppet_transparent_logo.svg.png"></div>
+    <div class="item"><img alt="" width="100" height="100" src="https://www.splunk.com/content/dam/splunk2/images/Planet-Splunk.png"></div>
+    <div class="item"><img alt="" width="100" height="100" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"></div>
+    <div class="item"><img alt="" width="100" height="100" src="https://resources.jetbrains.com/storage/products/intellij-idea/img/meta/intellij-idea_logo_300x300.png"></div>
+    <div class="item"><img alt="" width="100" height="100" src="https://sdtimes.com/wp-content/uploads/2016/05/0517.sdt-gradle.png"></div>
+    <div class="item"><img alt="" width="100" height="100" src="https://storage.googleapis.com/replit/images/1629118496825_12ab2b70fb48c6195431fd21c8f4c5bd.png"></div>
+    <div class="item"><img alt="" width="100" height="100" src="https://seeklogo.com/images/G/gitlab-logo-FAA48EFD02-seeklogo.com.png"></div>
+    <div class="item"><img alt="" width="70" height="100" src="https://firebase.google.com/static/downloads/brand-guidelines/PNG/logo-logomark.png?hl=es-419"></div>
+    <div class="item"><img alt="" width="180" height="80" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Puppet_transparent_logo.svg/2560px-Puppet_transparent_logo.svg.png"></div>
+    <div class="item"><img alt="" width="100" height="100" src="https://www.splunk.com/content/dam/splunk2/images/Planet-Splunk.png"></div>
+    <div class="item"><img alt="" width="100" height="100" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"></div>
+    <div class="item"><img alt="" width="100" height="100" src="https://resources.jetbrains.com/storage/products/intellij-idea/img/meta/intellij-idea_logo_300x300.png"></div>
+    <div class="item"><img alt="" width="100" height="100" src="https://sdtimes.com/wp-content/uploads/2016/05/0517.sdt-gradle.png"></div>
+    <div class="item"><img alt="" width="100" height="100" src="https://storage.googleapis.com/replit/images/1629118496825_12ab2b70fb48c6195431fd21c8f4c5bd.png"></div>
+    <div class="item"><img alt="" width="100" height="100" src="https://seeklogo.com/images/G/gitlab-logo-FAA48EFD02-seeklogo.com.png"></div>
+    <div class="item"><img alt="" width="70" height="100" src="https://firebase.google.com/static/downloads/brand-guidelines/PNG/logo-logomark.png?hl=es-419"></div>
+    <div class="item"><img alt="" width="180" height="80" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Puppet_transparent_logo.svg/2560px-Puppet_transparent_logo.svg.png"></div>
+    <div class="item"><img alt="" width="100" height="100" src="https://www.splunk.com/content/dam/splunk2/images/Planet-Splunk.png"></div>
+    <div class="item"><img alt="" width="100" height="100" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"></div>
+    <div class="item"><img alt="" width="100" height="100" src="https://resources.jetbrains.com/storage/products/intellij-idea/img/meta/intellij-idea_logo_300x300.png"></div>
+    <div class="item"><img alt="" width="100" height="100" src="https://sdtimes.com/wp-content/uploads/2016/05/0517.sdt-gradle.png"></div>
+    <div class="item"><img alt="" width="100" height="100" src="https://storage.googleapis.com/replit/images/1629118496825_12ab2b70fb48c6195431fd21c8f4c5bd.png"></div>
+    <div class="item"><img alt="" width="100" height="100" src="https://seeklogo.com/images/G/gitlab-logo-FAA48EFD02-seeklogo.com.png"></div>
+    <div class="item"><img alt="" width="70" height="100" src="https://assets.stickpng.com/images/5847f40ecef1014c0b5e488a.png"></div>
+    <div class="item"><img alt="" width="180" height="80" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Puppet_transparent_logo.svg/2560px-Puppet_transparent_logo.svg.png"></div>
+    <div class="item"><img alt="" width="100" height="100" src="https://www.splunk.com/content/dam/splunk2/images/Planet-Splunk.png"></div>
+  </div>
+</div>
+
+
+
+
+    

@@ -1,18 +1,15 @@
+
+<div class="containerbg">
+    
 <div class="container text-center">
     <div class="row g-3 mt-5">
-        <div class="">Agregar Estudiante</div>
+        <div class=""><H1>Agregar Estudiante</H1></div>
     </div>
     <div class="row g-3 mt-3 justify-content-start">
+        
         <div class="col-lg-2 col-md-2 col-sm-2 ">
-            <button routerLink="/">
-                <i class="fa-solid fa-arrow-left"></i>
-            </button>
+            <button class="btn btn-light" routerLink="/dashboard" ><i class="fa-solid fa-arrow-left"></i></button>
         </div>
-        <!-- <div class="col-lg-2 col-md-2 col-sm-2 ">
-            <button>
-                <i class="fa-solid fa-eraser"></i>
-            </button>
-        </div> -->
     </div>
     <form novalidate [formGroup]="form">
         <div class="row g-3 mt-3">
@@ -56,14 +53,27 @@
 
         <div class="row g-3 mt-3 justify-content-center" *ngIf="calculated == false">
             <div class="col">
-                <button class="btn btn-outline-primary px-5" type="button" (click)="calcular()">Calcular</button>
+                <button class="btn btn btn-success px-5" type="button" (click)="calcular()">Calcular</button>
             </div>
         </div>
 
         <div class="row g-3 mt-3 justify-content-center" *ngIf="calculated == true">
             <div class="col">
-                <button class="btn btn-outline-primary px-5" type="button" (click)="registro(form.value)">Guardar</button>
+                <button class="btn btn btn-success px-5" type="button" (click)="registro(form.value)">Guardar</button>
+                <div class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="d-flex">
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+</div>
             </div>
         </div>
     </form>
+</div>
+
+
+
+
 </div>

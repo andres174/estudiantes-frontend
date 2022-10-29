@@ -1,0 +1,160 @@
+/* bootstrap header*/
+#home,#about,#portfolio,#contact{
+	padding-top:70px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+#home{
+	padding:48vh 0;
+	background:url(https://itsvit.com/wp-content/uploads/2019/05/ItSvit_DevOps-business-value-and-advantages_Cover_1-1.png) no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+}
+#about{
+	padding:48vh 0;
+		background:url(https://deviniti.com/app/uploads/2018/07/DevOps-6-reasons.png) no-repeat;
+	background-size:cover;
+	background-attachment:fixed
+		;
+}
+#portfolio{
+	background-color:rgba(0,0,0,0);
+	background:url('https://images.unsplash.com/photo-1439761414027-4f4ebeeda3a3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=c0d2c6cca8f2b6de84c3c8999ea453f2') no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+#contact{
+	padding:30vh 0 40vh;
+	background:url(https://images.unsplash.com/photo-1441943250180-ea34e997ffad?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=7a8287157709e8f7833b68595a1298db) no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+.white-text{
+	color:white;
+}
+.mainTitle h1 {
+    color: white;
+}
+h4{
+    color: #01dc60;
+}
+
+
+.slider-area h2 {
+	text-align: center;
+	font-family: impact;
+	font-size: 60px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin: 100px 0 30px 0;
+	color: #212529;
+}
+.wrapper {
+	display: flex;
+	width: 1100px;
+	margin: 0 auto;
+	overflow: hidden;
+	border-radius: 180px;
+	padding: 2.5rem;
+	background: #ddd;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.item {
+    padding-left: 30px;
+	animation: animate 80s alternate linear infinite;
+}
+.container:hover .item {
+	animation-play-state: paused;
+}
+@keyframes animate {
+	0% {
+		transform: translate3d(0, 0, 0);
+	}
+	100% {
+		transform: translate3d(-1100px, 0, 0);
+	}
+}
+@media (max-width:767px) {
+	.slider-area h2 {
+		font-size: 30px;
+	}
+	.wrapper {
+		width: 95%;
+		border-radius: 0;
+		padding: 0;
+	}
+}
+
+
+
+
+
+
+
+
+.ourTeam-hedding p{
+    color: #979797;
+}
+.ourTeam-hedding strong{
+    color: black;
+}
+.ourTeam-hedding{
+    margin-bottom: 50px;
+}
+.ourTeam-hedding h1{
+    font-size: 25px;
+    font-weight: bold;
+    color: #145889;
+}
+.ourTeam-box{
+    border-radius: 2px;
+    color: #212529;
+    border-top: 6px solid ;
+    margin: 0px;
+    background-color: #FFFFFF;
+    margin-bottom: 30px;
+}
+.section1{
+    padding: 30px 0px 30px 0px;
+}
+.section1 img{
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+}
+.section2 p{
+    font-weight: bold;
+    color: #242424;
+    letter-spacing: 1px;
+}
+.section2 span{
+    color: #979597;
+}
+.section3{
+    background-color: #212529;
+}
+.section3 i{
+    color: #ffffff !important;
+    padding: 15px;
+    font-size: 15px;
+}
+.section-info{
+    border-top: 6px solid #212529;
+}
+.section-info p{
+    color: #90DFAA;
+}
+.section-info .section3{
+    background-color: #212529;
+}
+.section-danger{
+    border-top: 6px solid #212529;
+}
+.section-danger p{
+    color: #FD8469;
+}
+.section-danger .section3{
+    background-color: #212529;
+}
