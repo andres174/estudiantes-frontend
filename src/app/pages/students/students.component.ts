@@ -65,7 +65,6 @@ export class StudentsComponent implements OnInit {
     n4 = parseInt(this.form.value.n4);
 
     this.prom = (n1+n2+n3+n4)/4;
-    /* this.prom.toString(); */
     this.form.value.prom = this.prom;
     console.log(this.prom);
     this.calculated = true
