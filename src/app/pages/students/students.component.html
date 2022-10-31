@@ -1,77 +1,89 @@
-
 <div class="containerbg">
-    
-<div class="container text-center">
-    <div class="row g-3 mt-5">
-        <div class=""><H1>Agregar Estudiante</H1></div>
-    </div>
-    <div class="row g-3 mt-3 justify-content-start">
-        
-        <div class="col-lg-2 col-md-2 col-sm-2 ">
-            <button class="btn btn-light" routerLink="/dashboard" ><i class="fa-solid fa-arrow-left"></i></button>
-        </div>
-    </div>
-    <form novalidate [formGroup]="form">
-        <div class="row g-3 mt-3">
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" formControlName="name">
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" formControlName="lastname">
-            </div>
-        </div>
-        <div class="row g-3 mt-3">
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Cédula" aria-label="Cédula" formControlName="dni">
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Correo electrónico" aria-label="Correo electrónico" formControlName="email">
-            </div>
-        </div>
-        <div class="row g-3 mt-3">
-            <div class="col">
-                <input type="text" class="form-control" placeholder="Nota 1" aria-label="Nota 1" formControlName="n1">
-            </div>
-            <div class="col">
-                <input type="text" class="form-control" placeholder="Nota 2" aria-label="Nota 1" formControlName="n2">
-            </div>
-        </div>
-        <div class="row g-3 mt-3">
-            <div class="col">
-                <input type="text" class="form-control" placeholder="Nota 3" aria-label="Nota 1" formControlName="n3">
-            </div>
-            <div class="col">
-                <input type="text" class="form-control" placeholder="Nota 4" aria-label="Nota 1" formControlName="n4">
-            </div>
-        </div>
 
-        <div class="row g-3 mt-3 justify-content-center" *ngIf="calculated == true">
-            <div class="col">
-                <h2>El promedio es: {{prom}}</h2>
+    <div class="container text-center">
+        <div class="row g-3 mt-5">
+            <div class="">
+                <H1>Agregar Estudiante</H1>
             </div>
         </div>
+        <div class="row g-3 mt-3 justify-content-start">
 
-        <div class="row g-3 mt-3 justify-content-center" *ngIf="calculated == false">
-            <div class="col">
-                <button class="btn btn btn-success px-5" type="button" (click)="calcular()">Calcular</button>
+            <div class="col-lg-2 col-md-2 col-sm-2 ">
+                <button class="btn btn-light" routerLink="/dashboard"><i class="fa-solid fa-arrow-left"></i></button>
             </div>
         </div>
+        <form novalidate [formGroup]="form">
+            <div class="row g-3 mt-3">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre"
+                        formControlName="name">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido"
+                        formControlName="lastname">
+                </div>
+            </div>
+            <div class="row g-3 mt-3">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Cédula" aria-label="Cédula"
+                        formControlName="dni">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Correo electrónico"
+                        aria-label="Correo electrónico" formControlName="email">
+                </div>
+            </div>
+            <div class="row g-3 mt-3">
+                <div class="col">
+                    <input type="number" class="form-control" placeholder="Nota 1" aria-label="Nota 1"
+                        formControlName="n1">
+                </div>
+                <div class="col">
+                    <input type="number" class="form-control" placeholder="Nota 2" aria-label="Nota 1"
+                        formControlName="n2">
+                </div>
+            </div>
+            <div class="row g-3 mt-3">
+                <div class="col">
+                    <input type="number" class="form-control" placeholder="Nota 3" aria-label="Nota 1"
+                        formControlName="n3">
+                </div>
+                <div class="col">
+                    <input type="number" class="form-control" placeholder="Nota 4" aria-label="Nota 1"
+                        formControlName="n4">
+                </div>
+            </div>
 
-        <div class="row g-3 mt-3 justify-content-center" *ngIf="calculated == true">
-            <div class="col">
-                <button class="btn btn btn-success px-5" type="button" (click)="registro(form.value)">Guardar</button>
-                <div class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
-  <div class="d-flex">
-    <div class="toast-body">
-      Hello, world! This is a toast message.
+            <div class="row g-3 mt-3 justify-content-center" *ngIf="calculated == true">
+                <div class="col">
+                    <h2>El promedio es: {{prom}}</h2>
+                </div>
+            </div>
+
+            <div class="row g-3 mt-3 justify-content-center" *ngIf="calculated == false">
+                <div class="col">
+                    <button class="btn btn btn-success px-5" type="button" (click)="calcular()">Calcular</button>
+                </div>
+            </div>
+
+            <div class="row g-3 mt-3 justify-content-center" *ngIf="calculated == true">
+                <div class="col">
+                    <button class="btn btn btn-success px-5" type="button"
+                        (click)="registro(form.value)">Guardar</button>
+                    <div class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive"
+                        aria-atomic="true">
+                        <div class="d-flex">
+                            <div class="toast-body">
+                                Hello, world! This is a toast message.
+                            </div>
+                            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                                aria-label="Close"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
-    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-  </div>
-</div>
-            </div>
-        </div>
-    </form>
-</div>
 
 
 
