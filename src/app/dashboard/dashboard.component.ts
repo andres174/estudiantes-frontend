@@ -29,12 +29,14 @@ export class DashboardComponent implements OnInit {
       }
    });
 
-   /* if (this.students.length == 0){
+   /* if (this.students == []){
     this.isFull = false;
     }else {
       this.isFull = true;
     } */
     
+
+    []
   }
 
   /* cambio(){

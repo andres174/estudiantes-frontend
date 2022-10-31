@@ -13,27 +13,28 @@ export class StudentsComponent implements OnInit {
   calculated:boolean = false;
   prom: number = 0;
 
-  public form = new FormGroup({
-    name: new FormControl('',Validators.required),
-    lastname: new FormControl('',Validators.required),
-    dni: new FormControl('',Validators.required),
-    email: new FormControl('',Validators.required),
-    n1: new FormControl('',Validators.required),
-    n2: new FormControl('',Validators.required),
-    n3: new FormControl('',Validators.required),
-    n4: new FormControl('',Validators.required),
-    prom: new FormControl()
-  })
+  public form!: FormGroup;
 
-  constructor(private studentApi:EstudianteServiceService) { }
+  constructor(private studentApi:EstudianteServiceService, private fb: FormBuilder) { }
 
   ngOnInit(): void {
+    this.form = this.fb.group({
+      name: ['', [Validators.required]],
+      lastname: ['', [Validators.required]],
+      dni: ['', [Validators.required]],
+      email: ['', [Validators.required]],
+      n1: ['', [Validators.required]],
+      n2: ['', [Validators.required]],
+      n3: ['', [Validators.required]],
+      n4: ['', [Validators.required]],
+      prom: new FormControl()
+    })
   }
 
-  registro(form:any){
+  registro(_form:any){
 
-    if (true) {
-      this.studentApi.registerStudent(form).subscribe(data=>(console.log(data)));
+    if (_form.valid) {
+      this.studentApi.registerStudent(_form).subscribe(data=>(console.log(data)));
 
       this.form.reset();
       this.calculated = false;
