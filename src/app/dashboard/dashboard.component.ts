@@ -10,33 +10,27 @@ import { Router } from '@angular/router';
 export class DashboardComponent implements OnInit {
 
   students:any = [];
+  isFull:boolean = true;
   
 
   constructor(private studentApi:EstudianteServiceService, private router:Router) { }
 
   ngOnInit(): void {
-    /* this.getJ(); */
     this.getStudents();
   }
 
   getStudents(){
-    this.studentApi.getStudent().subscribe(res=>this.students=res);
+    this.studentApi.getStudent().subscribe({   
+      next:(s)=>{
+        this.students=s;
+        this.isFull = true;
+      },
+      error:(e)=>{
+      this.isFull = false;
+      }
+   });
+    
   }
   
-  /* nota(id:number){
-    this.router.navigate(['grades/'+ id ]);
-  } */
-
-  /* getJ(){
-    this.studentApi.getJava().subscribe({
-      next:(s)=>{
-        console.log(s);
-        
-      },
-      error: (e)=>{
-        console.log(e);
-      }
-    })
-  } */
 
 }

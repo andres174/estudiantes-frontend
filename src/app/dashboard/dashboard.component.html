@@ -1,32 +1,33 @@
 <div class="containerbg">
+  <div class="container text-center">
+
+    <div style="padding-top: 100px"></div>
+
+    <div class="alert alert-info m-t-1 text-xs-center" role="alert" *ngIf="isFull == true">
+      <i class="fa fa-info-circle fa-fw fa-lg"></i> Informacion Importante de
+      todos los estudiantes registrados.
+    </div>
+
+    <div class="alert alert-danger m-t-1 text-xs-center" role="alert" *ngIf="isFull == false">
+      <i class="fa fa-info-circle fa-fw fa-lg"></i> No existen estudiantes registrados.
+    </div>
 
 
-<div class="container text-center">
-    <!-- <div class="row justify-content-center">
+    <div class="row justify-content-center mt-5" *ngIf="isFull == false">
       <div class="col">
-        <div class="card" style="width: 13rem; margin: auto; margin-top: 6rem;">
+        <div class="card text-bg-ligth" style="width: 13rem; margin: auto; margin-top: 6rem;">
           <i class="fa-solid fa-user fa-2xl" style="margin-top: 2rem;" ></i>
           <div class="card-body">
             <h5 class="card-title">Estudiantes</h5>
-            <p class="card-text"> <button class="btn btn-primary" routerLink="students">Agregar</button></p>
+            <p class="card-text"> <button class="btn btn-danger" routerLink="students">Agregar</button></p>
            
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
 
 
-
-
-    
-<div style="padding-top: 100px;"></div>
-
-<div class="alert alert-info m-t-1 text-xs-center" role="alert">
-  <i class="fa fa-info-circle fa-fw fa-lg"></i> Informacion Importante de todos los estudiantes registrados
-</div>
-
-
-    <div class="row justify-content-center mt-5">
+    <div class="row justify-content-center mt-5" *ngIf="isFull == true">
       <table class="table">
         <thead>
           <tr>
@@ -44,19 +45,19 @@
         </thead>
         <tbody>
           <tr *ngFor="let item of students">
-            <th scope="row">{{item.id}}</th>
-            <td>{{item.name}}</td>
-            <td>{{item.lastname}}</td>
-            <td>{{item.dni}}</td>
-            <td>{{item.email}}</td>
-            <td>{{item.n1}}</td>
-            <td>{{item.n2}}</td>
-            <td>{{item.n3}}</td>
-            <td>{{item.n4}}</td>
-            <td>{{item.prom}}</td>
+            <th scope="row">{{ item.id }}</th>
+            <td>{{ item.name }}</td>
+            <td>{{ item.lastname }}</td>
+            <td>{{ item.dni }}</td>
+            <td>{{ item.email }}</td>
+            <td>{{ item.n1 }}</td>
+            <td>{{ item.n2 }}</td>
+            <td>{{ item.n3 }}</td>
+            <td>{{ item.n4 }}</td>
+            <td>{{ item.prom }}</td>
+          </tr>
         </tbody>
       </table>
     </div>
   </div>
-
 </div>
