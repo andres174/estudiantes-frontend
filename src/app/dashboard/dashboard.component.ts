@@ -36,6 +36,10 @@ export class DashboardComponent implements OnInit {
     }
     
   }
+
+  cambio(){
+    this.router.navigate
+  }
   
 
 }
