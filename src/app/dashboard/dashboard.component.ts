@@ -29,17 +29,17 @@ export class DashboardComponent implements OnInit {
       }
    });
 
-   if (this.students.length == 0){
+   /* if (this.students.length == 0){
     this.isFull = false;
     }else {
       this.isFull = true;
-    }
+    } */
     
   }
 
-  cambio(){
+  /* cambio(){
     this.router.navigate
-  }
+  } */
   
 
 }
