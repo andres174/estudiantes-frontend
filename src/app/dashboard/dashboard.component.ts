@@ -23,10 +23,9 @@ export class DashboardComponent implements OnInit {
     this.studentApi.getStudent().subscribe({   
       next:(s)=>{
         this.students=s;
-        this.isFull = true;
       },
       error:(e)=>{
-      this.isFull = false;
+        console.log(e);
       }
    });
 
