@@ -29,6 +29,12 @@ export class DashboardComponent implements OnInit {
       this.isFull = false;
       }
    });
+
+   if (this.students.length == 0){
+    this.isFull = false;
+    }else {
+      this.isFull = true;
+    }
     
   }
   
